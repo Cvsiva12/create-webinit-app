@@ -1,0 +1,51 @@
+{
+    "name": "create-webinit-app",
+    "version": "1.0.0",
+    "description": "A CLI to quickly scaffold Next.js projects using the WebInit template (Next.js, Mantine UI, Tailwind CSS). - (Under Development)",
+    "main": "main.js",
+    "type": "module",
+    "bin": {
+        "create-webinit-app": "./main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dev-onyx/create-webinit-app.git"
+    },
+    "keywords": [
+        "cli",
+        "npx",
+        "scaffolding",
+        "nextjs",
+        "react",
+        "mantine",
+        "tailwind",
+        "starter",
+        "template",
+        "webinit",
+        "dev-onyx"
+    ],
+    "author": {
+        "name": "dev-onyx",
+        "url": "https://github.com/dev-onyx"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dev-onyx/create-webinit-app/issues"
+    },
+    "homepage": "https://github.com/dev-onyx/create-webinit-app#readme",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "dependencies": {
+        "chalk": "^5.4.1",
+        "yargs": "^18.0.0"
+    },
+    "files": [
+        "main.js",
+        "README.md",
+        "LICENSE"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}

